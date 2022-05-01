@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //（以前  ：XML  可扩展标记语言 （用来传输和存储数据））----->  （现在：josn）
+
+        // Ajax的优点  无需刷新页面与服务器进行通信   根据用户事件来更新部分页面内容
+        // Ajax的缺点   没有浏览记录不能回退   存在跨域问题(同源)   SEO不太友好
+
+        //Http(超文本传输协议 : 浏览器和万维网服务器之间的通信规则)
+            //1.请求报文 (重点是格式和参数)
+            //(1)行     请求格式/url地址/http版本      (get/post)//s?ie=utf-8/(http/1.1)
+            //(2)头     Host:baidu.com   
+            //          Cookie:name=baidu
+            //          Content-type:application/x-www-form-urlencoded
+            //          User-Agent:chrome 83
+                        
+            //(3)空行   (必须有)
+            //(4)体     username=admin&password=admin  (是get为空  是post可以不为空)
+
+            //2.响应报文
+            //(1)行     http版本/响应码/响应字符串      ((http/1.1)/200 404 403 500/OK
+            //(2)头     Content-type:text/html;charset=utf-8
+            //          Content-length:2048
+            //          Content-encoding:gzip
+                        
+            //(3)空行   (必须有)
+            //(4)体    <html> <head> </head> <body> <h1>黄霸天</h1> </body> </html> 
+        
+    </script>
+</body>
+</html>
